@@ -1,0 +1,20 @@
+$ball-size: 150px;
+$radius: 50%;
+
+@mixin all-ball ($color){
+    width: $ball-size;
+    height: $ball-size;
+    background-color: $color;
+    border-radius: $radius;
+}
+@mixin animation-move($t) {
+    animation: move $t infinite;
+}
+@keyframes move {
+    0%,100% {
+        transform: translateX(0) ;
+    }
+    50% {
+        transform: translatex(calc(100vw - 100px));
+    }
+}

@@ -1,0 +1,21 @@
+@import '_reset';
+
+body{
+    margin: 0;
+}
+.container{
+    height: 70vh;
+    background-color: rgba(153, 153, 153, 0.212);
+    .ball1{
+        @include all-ball (blue);
+        @include animation-move(2s);
+    }
+    .ball2{
+        @include all-ball (red);
+        @include animation-move(3s);
+    }
+    .ball3{
+        @include all-ball (green);
+        @include animation-move(4s);
+    }
+}
